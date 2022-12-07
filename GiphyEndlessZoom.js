@@ -309,15 +309,16 @@ function showMsg2(tempMsg) {		// a more WebGL-friendly showMsg
 	if (msg2Div == null) {
 		msg2Div = createDiv();
 		msg2Div.style('font-family', 'sans-serif');
-		msg2Div.style('font-size', '60px');
+		msg2Div.style('font-size', '40px');
 		msg2Div.style('font-weight', 'bold');
-		// msg2Div.style('color', 'white');
+		msg2Div.style('color', 'white');
 		msg2Div.style('position', 'fixed');
 		msg2Div.style('bottom', '20px');
 		msg2Div.style('right', '20px');
 	}
 	if (tempMsg != null) {			// new message to show
 		// tempMsg += "<br><br>press Minus or Plus for more or less images <br>any other key to change the search tag (" + tag[currentTag] + ")";
+		tempMsg = "My Three Worries (Worry " + currentTag + ")<br>by TradeMark Gunderson<br>";
 		msg2Div.html(tempMsg);
 		msg2Fade = 1.0;
 	}
